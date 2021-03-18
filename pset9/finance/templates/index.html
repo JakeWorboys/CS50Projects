@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <h1 style="text-align: center;">Welcome</h1>
+    <div>
+        <p style="text-align: center;">
+            Stock portfolio:
+        </p>
+        <table class="ctab">
+            <col style="width: 20%;">
+            <col style="width: 30%;">
+            <col style="width: 30%;">
+            <col style="width: 30%;">
+            <thead>
+                <tr>
+                    <th>Stocks</th>
+                    <th>Amount</th>
+                    <th>Current price</th>
+                    <th>Total value</t>
+                </tr>
+            </thead>
+            <tbody style="background-color: #a1b3ad">
+                {% for i in range(count) %}
+                    <tr>
+                        <td>{{portfolio[i][0]}}</td>
+                        <td>{{portfolio[i][1]}}</td>
+                        <td>{{portfolio[i][2]}}</td>
+                        <td>{{portfolio[i][3]}}</td>
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <td style="background-color: white;"></td>
+                    <td style="background-color: white;">Wallet:</td>
+                    <td style="background-color: white;"></td>
+                    <td>{{wallet}}</td>
+                </tr>
+                <tr>
+                    <td style="background-color: white;"></td>
+                    <td style="background-color: white;">Total value:</td>
+                    <td style="background-color: white;"></td>
+                    <td>{{portfolio[0][4]}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

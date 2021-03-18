@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+
+        <title>My Webpage</title>
+
+        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXc8kgYqQLMfH" width="1580" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        <h1>Welcome home.</h1>
+        <h2><p id="date"></p></h2>
+
+        <script>
+            n =  new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+        </script>
+
+    </head>
+    <body>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="music.html">Music</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lectures.html">Lectures</a>
+              </li>
+              <li class="nav-item">
+                <a style = "margin-right: 0px;" class="nav-link" href="recommendations.html">Recommendations</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <p class="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus, arcu non scelerisque ullamcorper, purus velit pharetra elit, ac tempor felis urna sit amet ante. Aliquam imperdiet neque vel arcu consectetur, et elementum odio dignissim. Etiam sagittis, elit vel imperdiet elementum, elit massa facilisis nunc, id hendrerit mi nibh ac ipsum. Curabitur id maximus nisi. Sed mattis, eros a porttitor convallis, dui nibh blandit magna, sed ultrices eros risus at dui. Integer eget diam ut augue interdum varius. Maecenas aliquam odio posuere molestie blandit. Curabitur pellentesque ante et velit varius condimentum. Curabitur porttitor malesuada sagittis. Pellentesque non nunc quis eros iaculis eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut porttitor dictum tellus id volutpat. Mauris a egestas magna, vitae scelerisque nisi. Proin non sollicitudin nulla. Aenean eget mi sed diam ornare eleifend. Nunc sollicitudin dictum imperdiet.</p>
+
+        <p>Etiam suscipit urna sit amet neque maximus porttitor. Ut pellentesque lorem vitae nisi efficitur molestie. Donec ultricies, nulla sed auctor ultricies, tortor massa dictum risus, ac volutpat sem ante eu odio. Phasellus pharetra, leo ac pretium laoreet, lectus nisi eleifend tortor, a commodo ante elit in ipsum. Maecenas volutpat libero id eros interdum, in vehicula mauris dignissim. Mauris laoreet porttitor convallis. Duis non tellus quis enim sodales venenatis et eget ante. Sed egestas urna sit amet nisl feugiat, non faucibus nunc accumsan. Quisque lectus purus, pretium eu facilisis nec, placerat lobortis enim. Fusce varius diam tristique, porta est in, venenatis nibh. Suspendisse aliquam libero ut ipsum tincidunt sagittis. Morbi est purus, tincidunt eu tortor nec, rutrum iaculis libero. Pellentesque varius nunc in consequat fringilla. Nulla nec turpis nec enim eleifend porttitor eget ut neque. Donec ut cursus mauris. Vestibulum neque nunc, semper sodales lobortis et, ullamcorper vitae enim.</p>
+
+        <p>Cras feugiat, ex et hendrerit tincidunt, velit libero hendrerit augue, eu vulputate tellus ligula ac lorem. Sed et massa odio. Suspendisse pellentesque vel augue eget faucibus. Phasellus vitae elit est. Phasellus vel varius lacus, a condimentum ipsum. Maecenas lacinia orci a risus bibendum, vitae vestibulum odio tincidunt. Suspendisse volutpat, justo ut pharetra porttitor, justo nunc dapibus lorem, in interdum turpis mi nec elit. Donec dapibus pharetra eleifend. Curabitur viverra odio in leo consectetur blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec molestie velit. Aenean eget arcu arcu.</p>
+
+        <p>Praesent lectus magna, congue sit amet varius nec, suscipit id nisl. Suspendisse potenti. Ut bibendum mattis tincidunt. Nullam convallis tempor dui, a laoreet purus pulvinar vel. Nullam sit amet nunc sit amet purus rhoncus porta ac in ex. Cras et commodo urna. Vestibulum consectetur velit ac eros ultricies, id placerat urna venenatis. Etiam vestibulum dolor et velit ultrices, ac molestie purus vestibulum. Quisque ac luctus magna. Suspendisse tempor imperdiet eleifend. Aenean lobortis odio sit amet varius dapibus. Donec tellus est, tempor et faucibus at, fringilla eget dui.</p>
+
+        <p>Curabitur molestie massa at nibh auctor, id condimentum magna varius. Nullam vitae odio vitae elit vulputate fringilla. Sed est sapien, molestie ut nisi ac, luctus luctus felis. Suspendisse potenti. Vivamus pellentesque convallis felis at egestas. Nunc tempor felis ut massa luctus malesuada. Vivamus tortor velit, convallis sed ante non, luctus placerat purus. </p>
+
+    </body>
+</html>

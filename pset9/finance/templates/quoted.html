@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Market Quotes
+{% endblock %}
+
+{% block main %}
+    <h1>Current stock quote:</h1>
+    <div>
+        <p style="text-align: center;">
+            Quoted stock:
+        </p>
+        <table class="ctab">
+            <col style="width: 25%;">
+            <col style="width: 50%;">
+            <col style="width: 75%;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Symbol</th>
+                </tr>
+            </thead>
+            <tbody style="background-color: #a1b3ad">
+                <tr>
+                    <td>{{qte.name}}</td>
+                    <td>{{qte.price | usd}}</td>
+                    <td>{{qte.symbol}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
